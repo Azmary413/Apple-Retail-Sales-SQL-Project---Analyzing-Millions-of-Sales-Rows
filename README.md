@@ -1,4 +1,5 @@
 # Apple Retail Sales SQL Project Analyzing Millions of Sales Rows
+![banner](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/background.jpg)
 
 ### Overview
 This project involves analyzing millions of rows of sales data for Apple retail stores to derive actionable insights, optimize queries, and improve data performance using SQL. The dataset is designed to simulate a realistic sales environment, encompassing stores, products, categories, sales, and warranty claims.
