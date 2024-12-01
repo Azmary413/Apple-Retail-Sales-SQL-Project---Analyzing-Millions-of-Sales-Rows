@@ -279,3 +279,11 @@ ORDER BY store_id, year, month;
 - Integrate visualizations to represent trends and insights.
 
 
+## Key Learnings
+- **SQL Performance Optimization:** How to use indexing and EXPLAIN ANALYZE to speed up query execution.
+- **Business Problem Solving with SQL:** Applying SQL to solve real-world business questions related to sales performance, warranty claims, and product analysis.
+- **Data Insights:** Extracting actionable insights from large datasets to drive decisions in retail management.
+
+## Contributions
+Contributions are welcome! If you find any improvements or issues, feel free to fork this repository and submit a pull request.
+
