@@ -36,16 +36,31 @@ To handle millions of rows and ensure high performance, indexes were created on 
 
 
 ## Example Performance Improvement
+
+#### Filtering by Product ID
 - Query: `SELECT * FROM sales WHERE product_id = 'P-40'; `
 
-  - **Without Index:** Execution Time ~206 ms
-  - **With Index:** Execution Time ~9 ms
+  - **Without Index:** Execution Time ~260 ms
+  - **With Index:** Execution Time ~161 ms
+ 
+#### Before Indexing:
+  ![EXPLAIN Before Index](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/index%20before%20sales_quantity.jpg)
 
+#### After Indexing:
+ ![EXPLAIN Before Index](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/index%20after%20sales_quantity.jpg)
+
+#### Filtering by Sale Date
 - Query: `SELECT * FROM sales WHERE sale_date = '2020-04-18'; `
 
   - **Without Index:** Execution Time ~133 ms
   - **With Index:** Execution Time ~0.9 ms
-    
+
+#### Before Indexing:
+ ![EXPLAIN Before Index](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/index%20befor%20sale_date.jpg)
+
+ #### After Indexing:
+ ![EXPLAIN Before Index](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/index%20after%20sale_date.jpg)
+   
 Indexes significantly reduced execution time, ensuring scalable performance for large datasets.
 
 ## Business Problems Solved
@@ -144,6 +159,7 @@ SELECT * FROM product_rank
 WHERE least_sold_product = 1;
 
 ```
+#### Result:
 
 
 **Determine the percentage chance of receiving warranty claims after each purchase for each country.**
