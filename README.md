@@ -18,6 +18,8 @@ This project involves analyzing millions of rows of sales data for Apple retail 
 - **Advanced Querying:** Includes window functions, subqueries, Common Table Expressions (CTEs), and aggregate functions.
 
 ## Database Schema
+ ![Database Schema](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/erd%20of%20apple%20retail%20analysis.pgerd)
+
 ### Tables
 1. `stores`: Contains information about store locations, including `store_id`, `store_name`, `city`, and `country`.
 2. `category`: Represents product categories, identified by `category_id` and `category_name`.
@@ -160,7 +162,7 @@ WHERE least_sold_product = 1;
 
 ```
 #### Result:
-
+ ![Result](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/each%20year%20based%20on%20total%20units%20sold.jpg)
 
 **Determine the percentage chance of receiving warranty claims after each purchase for each country.**
 
@@ -184,6 +186,9 @@ FROM (
 ) AS subquery
 ORDER BY percentage_of_risk DESC;
 ```
+
+#### Result:
+ ![Result](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/percentage%20chance%20of%20receiving%20warranty.jpg)
 
 **Analyze the year-by-year growth ratio for each store.**
 
@@ -220,7 +225,10 @@ FROM growth_ratio
 WHERE prev_sale IS NOT NULL
 ORDER BY store_name, year_of_sale;
 ```
+#### Result:
+ ![Result](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/year%20by%20year%20growth%20ratio.jpg)
 
+ 
 **Calculate the correlation between product price and warranty claims for products sold in the last five years, segmented by price range.**
 
 ```sql
@@ -247,7 +255,9 @@ GROUP BY price_segment, c.category_name
 ORDER BY claim_rate_percentage DESC;
 ```
 
-
+#### Result:
+ ![Result](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/products%20sold%20in%20the%20last%20five%20years%2C%20segmented%20by%20price%20range.jpg)
+ 
 **Write a query to calculate the monthly running total of sales for each store over the past four years and compare trends during this period.**
 
 ```sql
@@ -273,7 +283,8 @@ SELECT
 FROM monthly_sales
 ORDER BY store_id, year, month;
 ```
-
+#### Result:
+ ![Result](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/compare%20trends%20during%20this%20period.jpg)
 
 ## Technologies Used
 - Database: PostgreSQL
