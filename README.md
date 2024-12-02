@@ -18,7 +18,7 @@ This project involves analyzing millions of rows of sales data for Apple retail 
 - **Advanced Querying:** Includes window functions, subqueries, Common Table Expressions (CTEs), and aggregate functions.
 
 ## Database Schema
- ![Database Schema](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/erd%20of%20apple%20retail%20analysis.pgerd)
+ ![Database Schema](https://github.com/Azmary413/Apple-Retail-Sales-SQL-Project---Analyzing-Millions-of-Sales-Rows/blob/main/erd.jpg)
 
 ### Tables
 1. `stores`: Contains information about store locations, including `store_id`, `store_name`, `city`, and `country`.
